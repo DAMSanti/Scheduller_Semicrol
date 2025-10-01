@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public enum Periodicidad
-{
+public enum Periodicidad {
     Unico,
     Recurrente
 }
 
-public class FechaSolicitada
-{
+public class FechaSolicitada {
     public DateTimeOffset Fecha { get; set; }
     public Boolean Activado { get; set; }
     public DateTimeOffset FechaInicio { get; set; }
@@ -21,8 +19,7 @@ public class FechaSolicitada
     public TimeSpan? Offset { get; set; }
 }
 
-public class FechaResuelta 
-{
+public class FechaResuelta {
     public DateTimeOffset NuevaFecha { get; set; }
     public string Descripcion { get; set; }
 }
